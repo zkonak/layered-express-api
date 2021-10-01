@@ -1,23 +1,23 @@
 import {Model, DataTypes} from 'sequelize';
 import db from '../../config/database';
 
-class DoctorDao extends Model {
+class DrugDao extends Model {
     static init(sequelize) {
         return super.init(
             {
-                email: DataTypes.STRING,
-                password: DataTypes.STRING,
+                
                 name:DataTypes.STRING
-            }, {sequelize, modelName: 'Doctor'}
+                
+            }, {sequelize, modelName: 'Drug'}
         );
     }
     static associate(models) {
          // define association here
-         this.belongsTo(models.Service);
+          
         return this;
     }
 };
 
-DoctorDao.init(db.sequelize);
+DrugDao.init(db.sequelize);
 
-export default DoctorDao;
+export default DrugDao;

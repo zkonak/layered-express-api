@@ -7,7 +7,7 @@ class ServiceRouter {
     }
 
     initializeRoutes(serviceController, auth) {
-        this.router.route('/service')
+        this.router.route('/medication')
             .get(serviceController.getAll)
             .post(serviceController.register);
 

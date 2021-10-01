@@ -1,11 +1,11 @@
 
-class ServiceEntity {
+class PatientEntity {
     
-    constructor({id, name, localisation,specialite}) {
+    constructor({id,email,password,name,serviceId}) {
         this.id = id;
         this.name = name;
-        this.localisation = localisation;
-        this.specialite=specialite;
+        this.email = email;
+        this.serviceId=serviceId;
     }
 
     // validate() {
@@ -17,4 +17,4 @@ class ServiceEntity {
 
 }
 
-export default ServiceEntity;
+export default PatientEntity;

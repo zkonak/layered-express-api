@@ -17,7 +17,7 @@ const application = new Server(express, routes, middlewares, logger);
 (async () => {
     try {
         await db.associateAll(db.sequelize.models);
-        await db.sequelize.sync({alter: true});
+        await db.sequelize.sync({alter: true,force:true});
         await application.listen(config.app_port);
     } catch (e) {
         console.error(e);

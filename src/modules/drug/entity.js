@@ -1,11 +1,10 @@
 
-class ServiceEntity {
+class DrugEntity {
     
-    constructor({id, name, localisation,specialite}) {
+    constructor({id,name}) {
         this.id = id;
         this.name = name;
-        this.localisation = localisation;
-        this.specialite=specialite;
+        
     }
 
     // validate() {
@@ -17,4 +16,4 @@ class ServiceEntity {
 
 }
 
-export default ServiceEntity;
+export default DrugEntity;
